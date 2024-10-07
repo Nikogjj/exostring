@@ -1,21 +1,22 @@
 #include <stdio.h>
-#define TAILLE 6
-
-// int main(){
-//     char prenom[TAILLE] = {'M','a','s','s','i',0};
-
-//     for(int i = 0;i < TAILLE;i++){
-//         printf("%c",prenom[i]);
-//     }
-//     return 0;
-// }
+#include <time.h>
 
 int main(){
-    char prenom[TAILLE]={'M','a','s','s','i','0'};
+    struct;
+    char prenom[]="tu es un pigeon et ses amis aussi";
     int i=0;
+    printf("Dans la phrase : %s\n\n",prenom);
     while(prenom[i]!=0){
-        putchar(prenom[i]);
+        
+        }
+        if (prenom[i]==115)
+        {
+            printf("%c est le %d eme caractère de la phrase\nCet élément est stocker dans la RAM dans l'adresse suivante: %p\n\n",prenom[i],i+1,&prenom[i]); 
+        }
+        if (prenom[i]==112)
+        {
+        }
+        
         i++;
+        
     }
-    return 0;
-}
