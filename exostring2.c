@@ -2,32 +2,30 @@
 
 int main(){
 
-    char str1[6] = "massi";
-    char str2[11] = "CHAOUCHI";
-    char str3[8] = "Bonjour";
-    char str4[17] = "Bonjour ca va ?";
-    char str5[26] = "anticonstitutionnellement";
-    char str6[28] = "intergouvernementalisations";
-    char tab[6][30]={
+    
+    char tab[6][40]={
         "massi",
         "CHAOUCHI",
         "Bonjour",
         "Bonjour ca va ?",
         "anticonstitutionnellement",
         "intergouvernementalisations"};
-    
+        
     for (int i = 0; i < 6; i++)
     {
-        for (int j = 0; j < 30; i++)
+        for (int j = 0;  tab[i][j] < 40; j++)
         {
-            tab[i][j];
             if (tab[i][j]>90)
             {
-                /* code */
+                tab[i][j]=tab[i][j]-32;
+                
             }
-            
+            else{
+                tab[i][j]=tab[i][j]+32;
+            }
         }
-        printf("%s\n",tab[i]);
+
+            printf("%s-\n",tab[i]);
             
     }
     
