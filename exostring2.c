@@ -15,15 +15,6 @@ int main(){
     {
         for (int j = 0;  tab[i][j]!=0; j++)
         {   
-            
-            // if (tab[i][j]>90)
-            // {
-            //     tab[i][j]=tab[i][j]-32;
-                
-            // }
-            // else{
-            //     tab[i][j]=tab[i][j]+32;
-            // }
             switch (tab[i][j])
             {
                 case 32:
