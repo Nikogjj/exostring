@@ -4,27 +4,37 @@
 int souschaine(char* str1, char* str2);
 
 int main(){
-    char tab[]="kayakkkkkk";
-    char tab1[]="aya";
-    souschaine(tab,tab1);
-    printf("%s\n%s\n",tab, tab1);
+    char* tab1="BonjourNikojour";
+    char* tab2="jour";
+    printf("%d\n",souschaine(tab1,tab2));
+    
 }
 
-int souschaine(char* str1, char* str2){
-    int j=0;
-    int compteur=0;
-    for (int i = 0; str1[i]!=0; i++)
-    {
-        compteur++;
-        if (str1[i]==str2[j])
+int souschaine(char* str1,char* str2){
+    int index=-1;
+        for (int i = 0; i < strlen(str1) && index==-1; i++)
+        // ou mettre un || mais alors il prendra que le deuxieme jour dans le mot//
         {
-            for (int i = 0; str2[i] !=0 ; i++)
+            printf("pspdpfj\n");
+            if (str1[i]==str2[i-i])
             {
-                str1[i]=str2[j];
+                for (int j=0; j < strlen(str2); j++)
+                {
+                    if (str1[i+j]==str2[j])
+                    {
+                        index=i;
+                    }
+                    else{
+                        
+                    }
+                    
+                }
+                
+            }
+            else{
+
             }
             
         }
-        else{}   
-    }
-    return compteur;
+    return index;
 }
